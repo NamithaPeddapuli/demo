@@ -1,3 +1,24 @@
+PSEUSO CODE
+
+MergeSort(array, lo, high):
+    if lo < high:
+        mid = (lo + high) // 2
+        mergeSort(array, lo, mid)
+        mergeSort(array, mid + 1, high)
+        merge(array, lo, mid, high)
+
+merge(array, lo, mid, high):
+    temp = []
+    i, j = lo, mid + 1 //These are pointers in both subarrays
+    while i <= mid and j <= high:
+        append smaller of array[i] or array[j] to temp array
+    add remaining elements of either 1st subarray or 2nd subarray to temp
+    copy temp array to original array
+
+
+
+PROGRAM FOR MERGE SORT
+
 public class Main {
 
     public static void mergeSort(int[] array, int lo, int high) {
